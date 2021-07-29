@@ -162,7 +162,7 @@ export default function StakeCard({ kukuBalance, xKUKUBalance }: StakeCardProps)
                         }}
                     >
                         <div className={activeTab === 0 ? activeTabStyle : inactiveTabStyle}>
-                            <p>{i18n._(t`Stake KUKU`)}</p>
+                            <p>{i18n._(t`Stake KUNI`)}</p>
                         </div>
                     </div>
                     <div
@@ -180,7 +180,7 @@ export default function StakeCard({ kukuBalance, xKUKUBalance }: StakeCardProps)
 
                 <div className="flex justify-between items-center w-full mt-6">
                     <p className="text-large md:text-h5 font-bold text-high-emphesis">
-                        {activeTab === 0 ? i18n._(t`Stake KUKU`) : i18n._(t`Unstake`)}
+                        {activeTab === 0 ? i18n._(t`Stake KUNI`) : i18n._(t`Unstake`)}
                     </p>
                 </div>
 
@@ -206,7 +206,7 @@ export default function StakeCard({ kukuBalance, xKUKUBalance }: StakeCardProps)
                                     input ? 'text-high-emphesis' : 'text-secondary'
                                 }`}
                             >
-                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}KUKU`}
+                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}KUNI`}
                             </p>
                         </div>
                         <div className="flex items-center text-secondary text-caption2 md:text-caption">
