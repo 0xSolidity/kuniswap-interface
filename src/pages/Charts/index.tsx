@@ -31,7 +31,7 @@ export default function App() {
 
     const [timeWindow, setTimeWindow] = useState(timeframeOptions.WEEK)
 
-    const KUKU = new Token(321, '0x509195A9d762BC6F3282c874156bd2E45dE86a10', 18, 'KUKU', 'KuKu Token')
+    const KUNI = new Token(321, '0xAd4D2bd157039A25bCc519f9093BbEc6D8953183', 18, 'KUNI', 'Kuni')
 
     const chart = useRef<any>()
     const resizeObserver = useRef<any>()
@@ -44,7 +44,7 @@ export default function App() {
 
     const [selectCurrency, setCurrencySelected] = useState(false)
 
-    const [currency0, setCurrency0] = useState<Currency | Token>(KUKU)
+    const [currency0, setCurrency0] = useState<Currency | Token>(KUNI)
     const [currency1, setCurrency1] = useState<Currency>(ETHER)
 
     const [pairState, pair] = usePair(currency0 ?? undefined, currency1 ?? undefined)
@@ -104,7 +104,7 @@ export default function App() {
     }, [setShowSearch])
 
     useEffect(() => {
-        let cur0: string | undefined = 'KUKU'
+        let cur0: string | undefined = 'KUNI'
 
         if (currency0) {
             if (currency0?.symbol != 'ETH') {
