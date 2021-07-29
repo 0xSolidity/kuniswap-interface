@@ -116,7 +116,7 @@ import ZEC from '../../assets/kashi/tokens/zec-square.jpg'
 import COIN from '../../assets/kashi/tokens/coin-square.jpg'
 import FRX from '../../assets/kashi/tokens/frx-square.jpg'
 import WOOFY from '../../assets/kashi/tokens/woofy-square.jpg'
-import KUKU from '../../assets/kashi/tokens/kuku-square.jpg'
+import KUNI from '../../assets/kashi/tokens/kuku-square.jpg'
 
 const TOKEN_ICONS: { [chainId in ChainId]?: any } = {
     [ChainId.MAINNET]: {
