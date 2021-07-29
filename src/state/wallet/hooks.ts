@@ -6,7 +6,7 @@ import { useAllTokens } from '../../hooks/Tokens'
 import { useMulticallContract } from '../../hooks/useContract'
 import { isAddress } from '../../utils'
 import { useMultipleContractSingleData, useSingleContractMultipleData } from '../multicall/hooks'
-import { KUKU } from './../../constants/index'
+import { KUNI } from './../../constants/index'
 
 /**
  * Returns a map of the given addresses to their eventually consistent ETH balances.
@@ -136,7 +136,7 @@ export function useAllTokenBalances(): { [tokenAddress: string]: TokenAmount | u
 export function useAggregateUniBalance(): TokenAmount | undefined {
     const { account, chainId } = useActiveWeb3React()
 
-    const uni = chainId ? KUKU[chainId] : undefined
+    const uni = chainId ? KUNI[chainId] : undefined
 
     const uniBalance: TokenAmount | undefined = useTokenBalance(account ?? undefined, uni)
 
