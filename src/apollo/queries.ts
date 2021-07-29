@@ -2,7 +2,7 @@ import { DocumentNode } from 'graphql/language/ast'
 import gql from 'graphql-tag'
 import { AnyARecord } from 'dns'
 //import { FACTORY_ADDRESS, BUNDLE_ID } from '../constants'
-const FACTORY_ADDRESS = '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac'
+const FACTORY_ADDRESS = '0x1b78A08C630d74d288d99d1BCB38D878c85F41C8'
 const BUNDLE_ID = '1'
 
 export const tokenFieldsQuery = gql`
