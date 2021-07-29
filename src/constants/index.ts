@@ -19,16 +19,16 @@ export const AVERAGE_BLOCK_TIME_IN_SECS = 13
 export const PROPOSAL_LENGTH_IN_BLOCKS = 40_320
 export const PROPOSAL_LENGTH_IN_SECS = AVERAGE_BLOCK_TIME_IN_SECS * PROPOSAL_LENGTH_IN_BLOCKS
 
-export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
+export const TIMELOCK_ADDRESS = '0x8e2f8e2EED4a874450450B00D9C5db8E83CeFfF6'
 
-// KUKU
-export const KUKU: ChainTokenMap = {
-    [ChainId.KCC]: new Token(ChainId.KCC, '0x509195a9d762bc6f3282c874156bd2e45de86a10', 18, 'KUKU', 'KuKuToken')
+// KUNI
+export const KUNI: ChainTokenMap = {
+    [ChainId.KCC]: new Token(ChainId.KCC, '0xAd4D2bd157039A25bCc519f9093BbEc6D8953183', 18, 'KUNI', 'Kuni')
 }
 
-// KUKU
+// KUNI
 export const SUSHI: ChainTokenMap = {
-    [ChainId.KCC]: new Token(ChainId.KCC, '0x509195a9d762bc6f3282c874156bd2e45de86a10', 18, 'KUKU', 'KuKuToken')
+    [ChainId.KCC]: new Token(ChainId.KCC, '0xAd4D2bd157039A25bCc519f9093BbEc6D8953183', 18, 'KUNI', 'Kuni')
 }
 
 // Default Ethereum chain tokens
@@ -190,7 +190,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
-    [ChainId.KCC]: [[KUKU[ChainId.KCC] as Token, WETH[ChainId.KCC]]]
+    [ChainId.KCC]: [[KUNI[ChainId.KCC] as Token, WETH[ChainId.KCC]]]
 }
 
 export interface WalletInfo {
