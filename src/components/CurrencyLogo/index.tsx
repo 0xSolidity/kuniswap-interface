@@ -1,4 +1,4 @@
-import { ChainId, Currency, ETHER, Token, KUKU } from '@kuniswap/sdk'
+import { ChainId, Currency, ETHER, Token, KUNI } from '@kuniswap/sdk'
 import React, { useMemo } from 'react'
 import AvalancheLogo from '../../assets/images/avalanche-logo.png'
 import BinanceCoinLogo from '../../assets/images/binance-coin-logo.png'
@@ -103,7 +103,7 @@ export default function CurrencyLogo({
         return <StyledNativeCurrencyLogo src={logo[chainId]} size={size} style={style} />
     }
 
-    if (currency?.symbol === 'KUKU' && chainId) {
+    if (currency?.symbol === 'KUNI' && chainId) {
         return <StyledNativeCurrencyLogo src={getKukuLogo()} size={size} style={style} />
     }
 
